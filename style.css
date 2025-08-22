@@ -1,0 +1,131 @@
+:root {
+    --primary: #429483;
+    --primary-container: #9ee29f;
+    --secondary: #365b37;
+    --secondary-container: #aebdaf;
+    --tertiary: #2c7e2e;
+    --tertiary-container: #b8e6b9;
+    --app-bar-color: #b8e6b9;
+    --error: #b00020;
+    --background-color: #f0f4f8;
+    --text-color: #1a1a1a;
+    --button-bg: var(--primary);
+    --button-text: #ffffff;
+}
+
+body.dark-theme {
+    --primary: #429483;
+    --primary-container: #274033;
+    --secondary: #81b39a;
+    --secondary-container: #4d6b5c;
+    --tertiary: #88c5a6;
+    --tertiary-container: #356c50;
+    --app-bar-color: #356c50;
+    --error: #cf6679;
+    --background-color: #121212;
+    --text-color: #e0e0e0;
+    --button-bg: var(--secondary);
+    --button-text: #121212;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: var(--app-bar-color);
+    transition: background-color 0.3s;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.logo h1 {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+#theme-switcher {
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--text-color);
+    background-color: transparent;
+    color: var(--text-color);
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+main {
+    padding: 2rem;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--primary);
+}
+
+.hero p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto 2rem;
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.cta-button {
+    background-color: var(--button-bg);
+    color: var(--button-text);
+    padding: 1rem 2rem;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    opacity: 0.9;
+}
+
+.screenshots {
+    margin-top: 4rem;
+}
+
+.screenshots h3 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.screenshot-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.screenshot-gallery img {
+    max-width: 300px;
+    border-radius: 8px;
+    border: 2px solid var(--secondary-container);
+}
