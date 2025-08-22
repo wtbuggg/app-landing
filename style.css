@@ -78,6 +78,19 @@ main {
 .hero h2 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
+    text-transform: uppercase;
+    line-height: 1.2;
+}
+
+.hero h2 .title-line-1 {
+    color: #1a1a1a;
+}
+
+body.dark-theme .hero h2 .title-line-1 {
+    color: #e0e0e0;
+}
+
+.hero h2 .title-line-2 {
     color: var(--primary);
 }
 
